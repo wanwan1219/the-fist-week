@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body bgcolor="" background="">
+<!--标签的语义化-->
+<!--标题标签    块标签-->
+<!--推荐 在一个网页中h1标签只出现一次 便于搜索引擎-->
+<!--推荐 在一个网页中h2 h3也尽量少用-->
+<!--块元素 独占一行 可以直接设置宽高-->常用块元素：h1-h6 p div ul ol li dt dd table form
+<!--行元素 共处一行 不可直接设置宽高-->常用行元素：a span i strong em
+<!--行块元素 共处一行 可以直接设置宽高-->常用行块元素：img button input
+<h1>标题标签</h1>
+<h2>标题标签</h2>
+<h3>标题标签</h3>
+<h4>标题标签</h4>
+<h5>标题标签</h5>
+<h6>标题标签</h6>
+<!--段落标签 块标签-->
+<p>段落标签</p>
+<!--修饰文本的类型   一般都为行标签-->
+<strong>强调标签    加粗</strong>
+<em>强调标签   斜体</em>
+<i>斜体标签</i>
+<del>删除线标签</del>
+<ins>插入标签  下划线</ins>
+<sup>上标</sup>
+<sub>下标</sub>
+<u>下划线</u> 已经被弃用
+
+<div>块标签的代表   区块容器标签</div>
+<span>行标签的代表   一小段文本修饰标签</span>
+空格&nbsp;大于号&gt;小于号&lt;版本号&copy;
+
+<!--超链接标签--> a标签必须内部有herf 否则不构成a标签
+<a href="#"></a>
+<a href="http://www.baidu.com">超链接1</a>
+<a href="06学习嵌套.html">超链接2</a>
+
+<!--锚链接-->
+<!--起名 不能以标签名命名 名字保持一致-->
+<a name="top"></a>
+<a href="#top">回到顶部</a>
+
+
+<!--引入图片    图片标签  单标签-->
+<!--路径 1、html和图片在同一个文件夹下    src="huang.jpg"-->
+<img src="huang.jpg" alt="图片加载失败" title="huang" />
+<!--2、html和img文件夹在同一个文件夹下  src="img/huang.jpg"-->
+<img src="img/huang.jpg" alt="图片加载失败" title="huang" />
+<!--3、html文档的文件夹和放图的文件夹在同一个文件下 src="../img/huang.jpg"-->
+<img src="../img/huang.jpg" alt="图片加载失败" title="huang" />
+alt 代表图片加载不出来的时候的提示 title表示加载出来以后 鼠标放到图片上显示出的提示
+
+
+
+<!--标签之间是可以嵌套的-->
+<a href="http://www.baidu.com">
+    <img src="tu.gif" alt="">
+</a>
+
+
+<!--单标签-->
+<!--xhtml2.0-->
+<!--什么是xhtml？-->
+换行符
+<br />
+水平分割线
+<hr />
+
+
+<!--跑马灯效果-->
+<!-- direction表示滚动的方向
+         值可以是left，right，up，down，默认为left
+    behavior:用于设定运动方式
+         slide:滑动一次
+         scroll：由一端滚动到另一端（连续滚动）   重复
+         alternate：往返滚动 重复
+    loop：循环次数
+
+   scrollamount：滚动距离(代表速度)
+   scrolldelay：滚动两次之间的延迟时间   数值越小  间隔就越小
+-->
+<marquee behavior="slide" direction="right" loop="3">111111</marquee>
+<marquee width="200" height="200" bgcolor="red" behavior="slide" direction="down" loop="3">111111</marquee>
+
+
+<!--表格-->
+<!--border-spacing:0;-->
+<!--thead  用来进行行分组-->
+<!--<thead></thead>-->
+<!--<tbody></tbody>-->
+<!--<tfoot></tfoot>-->
+<table border="1" width="500" height="500" align="center" cellspacing="0" cellpadding="0">
+   <caption>表格的标题</caption>
+    <tr>
+        <th>1</th>
+        <th>1</th>
+        <th>1</th>
+    </tr>
+    <tr valign="top">
+        <td>1</td>
+        <td rowspan="2">1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+怎么制作细线标签？
+
+
+
+
+<!--表单-->
+<!--加form与不加form的区别？加上form保证表单里的数据都提交到服务器 不加form易丢失数据-->
+<!--表单提交方式   get与post的区别？-->
+<!--用value提示与 用placeholder提示  区别？-->
+<!--readonly   disabled的区别？都不可修改但 readonly是只读状态 向后台提交 disable是不可操作状态 不向后台提交-->
+<!--将表格包起来在form后加<fieldset> <legend>用户注册表</legend>表格结束时加上</fieldset>-->
+
+<form action="" method="get"> <!--action里面是提交的目标地址 method里面是提交的方式-->
+    <fieldset>
+        <legend>用户注册表</legend>
+    文本框(单行文本框)   <input type="text" value="提示内容"  maxlength="6" >
+            <input type="text" placeholder="提示内容">
+            <input type="text" value="张三" readonly="readonly">
+            <input type="text" value="张三" disabled="disabled">
+    密码框   <input type="password">
+    搜索框   <input type="search" name="s" results="s" placeholder="搜索框">
+    按钮
+        系统默认的提交按钮     <input type="submit" value="dengl">
+        自定义按钮   <input type="button" value="dengl">
+                     <button>自定义普通按钮</button>
+        重置按钮     <input type="reset" value="重置按钮">
+        文件上传按钮 <input type="file">(不能设置value)
+        图片按钮     <input type="image" src="tu.gif">
+        隐藏控件     <input type="hidden">   <!--不显示但是往服务器提交-->
+
+    单选框
+    <!--label 配合表单使用  获取焦点-->
+    <!--checked="checked" 默认选中-->
+    <input id="man"  type="radio" name="sex"><label for="man">男</label>
+    <input id="woman" type="radio" name="sex" checked="checked"><label for="woman">女</label>
+        <!--name相同才会只能选择一个
+        把男和女放到label里面通过点击文字选中按钮 label里面属性for必须和input里面属性id的值相同
+        在label中间写字才会点击文字就能选中-->
+    多选框
+    <!--checked="checked" 默认选中-->
+    <label for="">您的爱好有哪些？</label>
+    <input type="checkbox">吃饭
+    <input type="checkbox" checked="checked">睡觉
+    <input type="checkbox" checked="checked">打同桌
+
+    下拉菜单
+    <!--selected="selected" 默认选中-->
+    <select name="" id="">
+        <option value="">请选择</option>
+        <option value="">北京</option>
+        <option value="" selected="selected">上海</option>
+        <option value="">天津</option>
+    </select>
+
+    展开选项
+    <select name="" id="" multiple="multiple">
+        <option value="">请选择</option>
+        <option value="">北京</option>
+        <option value="" selected="selected">上海</option>
+        <option value="">天津</option>
+    </select>
+
+    选项关联
+    <select name="" id="">
+        <option value="">请选择</option>
+        <option value="">北京</option>
+        <option value="" selected="selected">上海</option>
+        <option value="">天津</option>
+    </select>
+    <select name="" id="">
+        <optgroup label="北京">
+            <option value="">昌平区</option>
+            <option value="" >海淀区</option>
+            <option value="">丰台区</option>
+        </optgroup>
+        <optgroup label="上海">
+            <option value="">昌平区</option>
+            <option value="" >海淀区</option>
+            <option value="">丰台区</option>
+        </optgroup>
+        <optgroup label="天津">
+            <option value="">昌平区</option>
+            <option value="" >海淀区</option>
+            <option value="">丰台区</option>
+        </optgroup>
+    </select>
+
+    多行文本框
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    </fieldset>
+</form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      /*  定位
+        position: fixed;固定定位
+        position: absolute;绝对定位
+        position: relative;相对定位
+        position: static;静态定位（默认）*/
+      /*两种方式实现居中
+      1.position:absolute;
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        margin:auto
+       2.position:absolute;
+       left:0;
+       margin-left:-70px;
+       top:0;
+       margin-top:-10px;
+       */
+        *{
+            margin: 0;
+            padding: 0;
+          /*  position: fixed;*//*固定定位*/
+        }
+        .banner ul{
+            list-style: none;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -75px;/*实现水平居中*/
+        }
+
+        .banner li{
+            width: 20px;
+            height: 20px;
+            background: blue;
+            float: left;
+            margin-right: 10px;
+            color: white;
+
+            text-align: center;/*文本水平居中*/
+            line-height: 20px;/*一行文本垂直居中 高度和height一致*/
+
+            border-radius: 100%;/*实现圆角弧度*/
+        }
+        /*分组选择器*/
+        .banner .prev,.banner .next{
+            width: 60px;
+            height: 100px;
+            /*background: red;*/
+            background: rgba(255,0,0,0.5);/*实现背景透明 a值为0-1*/
+            position:absolute;
+            top:50%;
+            margin-top: -50px;
+
+        }
+        .banner{
+            width: 730px;
+            height: 450px;
+            position: relative;
+        }
+        .banner .next{
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="banner">
+    <img src="img/页码.png" alt="">
+    <div class="prev"></div>
+    <div class="next"></div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</div>
+</body>
+</html>

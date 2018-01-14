@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*  定位 浮动元素不能用margin：auto 所以用定位
+        position: fixed;固定定位
+        position: absolute;绝对定位
+        position: relative;相对定位
+        position: static;静态定位（默认）*/
+        /*固定定位fixed 相对于浏览器窗口定位设置bottom top left right*/
+        /*相对定位relative 相对于自身原来的位置进行定位 不会破坏盒子结构*/
+        /*绝对定位absolute 以上级元素有定位的元素 如果上级元素没有定位（上级没有找上上级 但是依据就近原则） 则针对body定位
+            网页中一般使用子绝父相*/
+        /*绝对定位 和 固定定位 和 浮动 都脱离标准文档流 导致 margin:auto 不起作用 高度显示为0*/
+        .div1{
+            width: 100px;
+            height: 1000px;
+            background: red;
+        }
+        .div2{
+            width: 100px;
+            height: 100px;
+            /*height: 100%;   有固定定位fixed才能实现高度=100% 充满整个屏幕 就不用设置高度了*/
+            background: blue;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+        .div3{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            position: relative;
+            top: 20px;
+            left: 20px;
+
+        }
+        .div4{
+            width: 100px;
+            height: 100px;
+            background: green;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="div1">
+        <div class="div4"></div>
+    </div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</div>
+</body>
+</html>

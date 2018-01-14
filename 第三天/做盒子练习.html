@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /**通配符选择器 遍历网页中所有的*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;/*去掉li里的点*/
+        }
+        .header{
+            width: 100%;/*默认宽度为100%*/
+            height: 100px;
+            padding: 0;
+            background: yellow;
+        }
+        .inner{
+            width: 940px;
+            height: 100px;
+            margin: auto;
+            background: red;
+        }
+        .header .logo{
+            width: 186px;
+            height: 100px;
+            background: blue;
+            float: left;
+        }
+        .header .nav{
+            width: 472px;
+            height: 100px;
+            background:blue;
+            float: right;
+        }
+        .main{
+            height: 1729px;
+            background: black;
+            padding-top: 30px;
+        }
+        .main li{
+            background: #9bffcc;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            width: 300px;
+            height: 402px;
+            float: left;
+        }
+        /*伪类选择器*/
+        .main li:last-of-type{
+            margin-right: 0;
+        }
+        .main .first{
+            margin-right: 0;
+            width: 640px;
+        }
+        .main .last{
+            margin-right: 0;
+            width: 620px;
+        }
+        .footer{
+            height: 142px;
+            background:yellow ;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="inner">
+            <div class="logo">网页的logo</div>
+            <div class="nav">网页的导航</div>
+        </div>
+    </div>
+    <div class="main">
+     <div class="inner">
+        <ul>
+            <li class="first"><img src="images/pic_big.jpg"></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li><img src="images/bg_03.jpg"></li>
+            <li></li>
+            <li><img src="images/bg_05.jpg"></li>
+        </ul>
+        <ul>
+            <li><img src="images/1.jpg"></li>
+            <li><img src="images/bg_10.jpg"></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li class="last"><img src="images/3.jpg"></li>
+        </ul>
+    </div>
+    </div>
+    <div>
+        <div class="footer">
+            <img src="images/share_icon_14.jpg">
+            <img src="images/share_icon_16.jpg">
+            <img src="images/share_icon_18.jpg">
+            <img src="images/share_icon_20.jpg">
+            <img src="images/share_icon_22.jpg">
+        </div>
+    </div>
+</body>
+</html>

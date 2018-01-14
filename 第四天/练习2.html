@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*margin塌陷：*/
+        /*1.给父盒子加一个padding-top 转化为低级box-sizing：border-box；*/
+        /*2.给父盒子加一个透明的边框 border：1px solid transparents;再给子盒子设置margin-top*/
+        /*3.给父盒子加一个overflow：hidden；溢出隐藏 给子盒子加margin-top*/
+        .div1{
+            height: 500px;
+            width: 500px;
+            /*border: #59ecff solid 5px;*/
+            background-color: #e33d3f;
+            /*padding-top: 20px;*/
+            /*padding-top: 30px;*/
+            /*box-sizing: border-box;*/
+            /*padding-left: 30px;*/
+            /*border: 10px solid yellow;*/
+            overflow: hidden;
+        }
+        .div2{
+            height: 300px;
+            width: 300px;
+            background-color: #00ae66;
+            /*margin-top: 20px;*/
+            /*border: #59ecff solid 5px;*/
+            /*margin-left: 50px;*/
+            /*margin-top: 50px;*/
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <div class="div2"></div>
+</div>
+</body>
+</html>

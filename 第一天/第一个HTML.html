@@ -1,0 +1,147 @@
+<!DOCTYPE html>   h5文档的声明
+<html lang="en">  html开始
+<head>            网页头部-头部的开始
+    <meta charset="UTF-8">   网页的编码格式
+    <title>Title</title>     网页的标题
+    <style>
+        tr{
+            color: aliceblue;
+        }
+        .td1{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body bgcolor="#faebd7">                     网页正文-身体的开始-->
+
+<!--注释标签-->   ctrl+/
+    <a name="top"></a>
+    <a href="#bottom">回到底部</a>
+<!--标题标签 只有h1到h6 为了SEO（搜索引擎）优化 一个html文档中 h1推荐只出现一次-->
+<h1>标题标签-一级标题</h1>
+<h2>标题标签-二级标题</h2>
+<h3>标题标签</h3>
+
+<h4>标题标签</h4>
+<h5>标题标签</h5>
+<h6>标题标签-六级标题</h6> <!--p标签是块标签-->
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<p>段落标签</p>
+<!--<p>&lt;p&gt;</p>-->
+<ins>aaaaa</ins>
+<em>mamam</em>
+<i>mamama</i>
+<a href="#top">回到顶部</a>
+    <a name="bottom"></a>
+    <!--引入图片    图片标签  单标签-->
+    <!--路径 1、html和图片在同一个文件夹下    src="huang.jpg"-->
+    <!--2、html和img文件夹在同一个文件夹下  src="img/huang.jpg"-->
+    <!--3、html文档的文件夹和放图的文件夹在同一个文件下 src="../img/huang.jpg"-->
+    <img src="huang.jpg" alt="图片加载失败" title="huang" />
+    <img src="img/huang.jpg" alt="图片加载失败" title="huang" />
+    <img src="../img/huang.jpg" alt="图片加载失败" title="huang" />
+    alt 代表图片加载不出来的时候的提示 title表示加载出来以后 鼠标放到图片上显示出的提示
+   <a href="http://baidu.com" target="_self">链接一</a>
+列表：
+<h1>注册步骤：</h1>
+<ol>
+    <li>填写信息</li>
+    <li>受电子邮件</li>
+    <li>注册成功</li>
+</ol>
+<h1>注册步骤：</h1>
+<ul>
+    <li>填写信息</li>
+    <li>受电子邮件</li>
+    <li>注册成功</li>
+</ul>
+<dl>
+    <dt>咖啡</dt>
+    <dd>一种黑色的热饮料，原料据说是咖啡豆，非洲生产这种原料</dd>
+    <dd>可以提神，刺激神经</dd>
+</dl>
+<dl>
+    <dt>图文混淆效果</dt><br/><img src="img/huang.jpg" alt="图片在加载" title="huang"/>
+        <dd>商品名称：什么什么电熨斗</dd>
+        <dd>商品价格：388元</dd>
+        <dd>商品简介：什么什么设计之类的</dd>
+</dl>
+表格：
+<!--tr：表示一行-->
+<!--td：表示一列-->
+<!--th: 表示表头 相当于td th比td加粗一些且自动居中-->
+<!--border：边框-->
+<!--cellspacing:单元格与单元格之间的间距-->
+<!--cellpading:调整单元格与文字间的间距-->
+<!--align：center、left、right-->
+<!--rowspan:行合并 colspan：列合并-->
+<!--width height表示每一个格的宽高-->
+颜色覆盖 cellspacing="1px" bgcolor="white"
+表格属性 frame="border" rules="all"
+<table border="1px"cellspacing="0" cellpadding="10px" width="200px" height="100px" align="center">
+<tr>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+</tr>
+    <tr><!--align 默认左侧-->
+        <td>1</td>
+        <td colspan="2">2</td>
+    </tr>
+    <tr align="center">
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr align="right">
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr align="left">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+<table bgcolor="#a9a9a9" CELLSPACING="20px" cellpadding="0" border="0px" width="200px" height="300px">
+    <tr bgcolor="black" align="center">
+        <td id="td1">1<br/>JAN</td>
+        <td>2<br/>FER</td>
+        <td>3<br/>MAR</td>
+    </tr>
+    <tr bgcolor="black" align="center">
+        <td>4<br/>APR</td>
+        <td>5<br/>MAY</td>
+        <td>6<br/>JUN</td>
+    </tr>
+    <tr bgcolor="black" align="center">
+        <td>7<br/>JUL</td>
+        <td>8<br/>AUG</td>
+        <td>9<br/>SEP</td>
+    </tr>
+    <tr bgcolor="black" align="center" >
+        <td>10<br/>OCT</td>
+        <td>11<br/>VOV</td>
+        <td>12<br/>DEC</td>
+    </tr>
+</table>
+<input type="checkbox">chifan
+<input type="checkbox">can
+<input type="checkbox" checked="checked">睡觉
+<input id="man" type="radio" name="sex"><label for="man">man</label>
+<input type="radio" name="sex">woman
+
+</body>
+</html>

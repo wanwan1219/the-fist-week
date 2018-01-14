@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--内嵌样式（内部样式）-->
+    <style>
+        /*标签选择器*/
+        div{
+            height: 400px;
+            width: 200px;
+            background-color: #9bffcc;
+        }
+        /*类选择器（class选择器）*/
+        /*.类名{}*/
+        /*同一个标签可以有多个类名 同一个类名可以对应多个标签*/
+        /*类选择器的优先级高于标签选择器*/
+        /*同级别后面会覆盖前面*/
+        /*id选择器的优先级高于类选择器高于标签选择器*/
+       /*标签选择器1 类选择器10 id选择器100*/
+        /*10+1=11*/
+        .div1{
+            background-color: #e33d3f;
+        }
+        .div2{
+            background-color: blue;
+        }
+        #div1{
+            background-color: #9bffcc;
+        }
+        /*后代选择器 用空格隔开*/
+        .ul1 li{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<!--内联样式（行内样式）-->
+<!--行内样式优先级高于内部样式-->
+<div style="height: 400px;width: 200px;background-color: #9bffcc"></div>
+<div class="div1 divp" id="div1"></div>可以有多个类名 但只能有一个id
+<div class="div1 div2"></div>可以重名
+<div class="div3"></div>
+<ul class="ul1">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

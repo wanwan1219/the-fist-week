@@ -1,0 +1,183 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.dhl{
+    background:#403f40 ;
+    height: 50px;
+}
+.header{
+    background: #403e3f;
+    height: 208px;
+}
+.inner1{
+    width: 1050px;
+    margin: auto;
+}
+.inner2{
+    width: 900px;
+    margin: auto;
+}
+.logo{
+    padding: 30px 0;
+    color: white;
+    font-size: 30px;
+}
+.logo img,.nm{
+    float: left;
+}
+.xtb{
+    float: right;
+    margin: 30px 70px 30px 0;
+}
+.clear{
+    clear: both;
+}
+.dh li{
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    padding:0 20px;
+    color: white;
+}
+.dh li:hover{
+    color: #91ff3c;
+    border-bottom: #91ff3c solid 5px;
+}
+.xtb img{
+    padding-left: 30px;
+}
+.datu{
+    width: 100%;
+    position: relative;
+}
+.datu img{
+    width: 100%;
+}
+.ct{
+    height: 50px;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0;
+}
+.ct li{
+    height: 20px;
+    width: 20px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    float: left;
+}
+.ct ul{
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+}
+.tb{
+    float: left;
+    width: 170px;
+    padding-right: 70px;
+}
+.tb input{
+    height: 30px;
+    width: 160px;
+    background: #3f3f3f;
+    color: white;
+}
+.tb1{
+    padding-right: 0;
+}
+.inner2 h1,.inner2 h2{
+    text-align: center;
+}
+.wm{
+    border-bottom:5px solid green ;
+    height: 600px;
+}
+.al{
+    text-align: center;
+}
+.an input{
+    width: 120px;
+    height: 25px;
+    color: white;
+    background: #a2db3a;
+    text-align: center;
+}
+.al h2{
+    color: #a2db3a;
+}
+.yuan{
+    height: 195px;
+    width: 195px;
+    border-radius: 50%;
+    border: #eef2fb 1px solid;
+    float: left;
+    background: white;
+    margin-right: 30px;line-height: 65px;
+}
+.box{
+    background: #fafafa;
+    height: 560px;
+}
+.yuan1{
+    margin-right: 0;
+}
+.inner2 h1{
+    height: 225px;
+    line-height: 225px;
+}
+.yuan input{
+    width: 120px;
+    height: 25px;
+    color: white;
+    background:#a2db3a;
+}
+.wz li{
+    float: left;
+    text-align: center;
+    margin-right: 8px;
+}
+.footer{
+    height: 345px;
+    background: #403f40;
+    color: white;
+}
+.wz{
+    height: 60px;
+    line-height: 60px;
+}
+.footer{
+    color: white;
+}
+.zhy ul{
+    margin: auto;
+    height: 40px;
+}
+.footer li{
+    float: left;
+}
+.zut{
+    height: 210px;
+}
+.zht{
+    position: relative;
+}
+.div2{
+    position: absolute;
+    top: 160px;
+    height: 80px;
+}
+.zhy{
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    margin-left:-170px;
+}
+.zhy li{
+    text-align: center;
+    padding-right: 10px;
+}

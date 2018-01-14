@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*盒子总宽度=盒子本身宽度+左右两侧内边距+左右两侧边框+左右外边距；*/
+        /*标准盒模型 包含属性 content(盒子本身) padding margin border;*/
+        /*ie低级版本的盒模型 包含属性 content（盒子本身）margin*/
+        /*盒子总宽度=盒子本身+左右外边距*/
+        /*标准盒模型可以通过 box-sizing: border-box; 转换为低级盒模型*/
+        /*margin：用于两个兄弟（平级）关系盒子之间的间距*/
+        /*padding:用于父子关系的盒子之间的间距（设到父级里面）*/
+        .fa{
+            height: 100px;
+            width: 100px;
+            background-color: #9bffcc;
+            padding: 10px;
+            border: #7da5ff 3px solid;
+            margin: 20px;
+            /*margin: auto;实现水平居中 只适用于块级元素*/
+            /*box-sizing: border-box;高级版本向低级版本转换*/
+        }
+        .son{
+            height: 30px;
+            width: 30px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div class="fa">
+    <div class="son"></div>
+    <div></div>
+</div>
+</body>
+</html>

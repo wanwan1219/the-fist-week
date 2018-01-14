@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--不可以与body进行共存的-->
+<!--垂直框架-->
+<!--<frameset cols="25%,50%,*">-->
+    <!--<frame src="">-->
+    <!--<frame src="">-->
+    <!--<frame src="">-->
+<!--</frameset>-->
+<!--<noframes><body>您的浏览器无法处理框架！</body></noframes>-->
+<!--水平框架-->
+<!--<frameset rows="25%,50%,25%,*">-->
+    <!--<frame src="">-->
+    <!--<frame src="">-->
+    <!--<frame src="">-->
+    <!--<frame src="">-->
+<!--</frameset>-->
+<!--<frameset rows="25%,*,25%">-->
+    <!--<frame src="top.html">-->
+    <!--<frameset cols="25%,*">-->
+        <!--<frame src="left.html" name="left">-->
+        <!--<frame src="right.html" name="right">-->
+    <!--</frameset>-->
+    <!--<frame src="bottom.html">-->
+<!--</frameset>-->
+可以与body共存（内联框架）<body>
+<iframe src="right.html" name="baidu"></iframe>
+<iframe src="left.html"></iframe>
+<a href="http://www.baidu.com" target="baidu">百度</a>
+</body>
+</html>
